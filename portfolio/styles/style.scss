@@ -21,6 +21,22 @@
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3)
 }
 
+// modes
+
+.light-mode {
+    --color-primary: ##FFFFFF;
+    --color-secondary: #F56692;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-gray0: #f8f8f8;
+    --color-gray-1: #6c7983;
+    --color-gray-2: #6c7983;
+    --color-gray-3: #6c7983;
+    --color-gray-4: #454e56;
+    --color-gray-5: #c9c2c2;
+    --color-gray-6: #12181b;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-primary);
@@ -37,7 +53,7 @@ a {
 }
 
 header {
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -159,8 +175,21 @@ section {
     cursor: pointer;
     position: fixed;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
+    transition: all .1s ease-in-out;
+
+    &:active {
+        transform: translateY(-5px);
+
+    }
+
+    i {
+        font-size: 1.4rem;
+        color: var(--color-gray-2);
+        pointer-events: none;
+    }
 }
 
 // header-content
@@ -802,3 +831,5 @@ section {
         }
     }
 }
+
+@import "./media";
