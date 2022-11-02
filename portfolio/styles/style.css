@@ -864,4 +864,7 @@ section {
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
   }
+  .about-stats .main-title h2 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */

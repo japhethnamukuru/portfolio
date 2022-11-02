@@ -191,5 +191,11 @@
         .progress-bars {
             grid-template-columns: 1fr;
         }
+
+        .main-title {
+            h2 {
+                font-size: 3rem;
+            }
+        }
     }
 }
