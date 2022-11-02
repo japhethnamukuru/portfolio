@@ -178,6 +178,12 @@
 
         .control {
             margin: .3rem 1rem;
+
+            p {
+                margin-left: 0 !important;
+                margin-top: -6rem;
+                margin-right: 0 !important;
+            }
         }
     }
 }

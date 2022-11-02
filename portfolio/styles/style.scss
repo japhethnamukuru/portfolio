@@ -7,7 +7,7 @@
 
 :root {
     --color-primary: #191d2b;
-    --color-secondary: #27AE60;
+    --color-secondary: #30CFD0;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-gray0: #f8f8f8;
@@ -24,8 +24,8 @@
 // modes
 
 .light-mode {
-    --color-primary: ##FFFFFF;
-    --color-secondary: #F56692;
+    --color-primary: #FFFFFF;
+    --color-secondary: #a3076f;
     --color-white: #454e56;
     --color-black: #000;
     --color-gray0: #f8f8f8;
@@ -152,12 +152,31 @@ section {
             transform: translateY(-3px);
             box-shadow: 0 0 10px blueviolet;
             transition: all .4s ease-in-out;
+
+            p {
+                margin-left: -8rem;
+                margin-right: 1rem;
+                transition: all .5s ease-in-out;
+                opacity: 1;
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: #30CFD0  ;
+            }
+
+            i {
+                color: crimson;
+            }
         }
 
         i {
             font-size: 1.2rem;
             color: var(--color-gray-2);
             pointer-events: none;
+        }
+
+        p {
+            position: absolute;
+            opacity: 0;
         }
 
     }
@@ -209,7 +228,7 @@ section {
             transition: all .4s ease-in-out;
             width: 65%;
             height: 100%;
-            background-color: var(--color-secondary);
+            background: linear-gradient(to right, #30CFD0 0%, #330867 40%);
             position: absolute;
             left: 0;
             top: 0;
@@ -248,15 +267,19 @@ section {
 
         .name {
             font-size: 3rem;
-            
-            span {
-                color: var(--color-secondary);
-            }
-
-            p {
-                margin: 1.5rem 0;
-                line-height: 2rem;
-            }
+            background: linear-gradient(to right, slateblue 0%, crimson 100%);
+            background-clip: text;
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;         
+                        
+        }
+        p {
+            margin: 1.5rem 0;
+            line-height: 2rem;
+            background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }
@@ -278,13 +301,15 @@ section {
     align-self: flex-start;
     align-items: center;
     overflow: hidden;
+    margin-top: 3rem;
 
     .btn-text {
         padding: 0 2rem;
+        color: #30CFD0;
     }
 
     .btn-icon {
-        background-color: var(--color-secondary);
+        background: var(--color-secondary);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -306,10 +331,29 @@ section {
         &::before {
             width: 100%;
             height: 100%;
-            background-color: var(--color-secondary);
+            background: linear-gradient(to right, #30CFD0 0%, #330867 100%);;
             transform: translateX(0%);
         }
     }
+}
+
+// type writer
+
+.type-writer {
+    background: linear-gradient(to right, slateblue 0%, crimson 100%);
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+.line-container {
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, slateblue, crimson);
+    margin-top: 3rem;   
 }
 
 // About section css
@@ -558,7 +602,7 @@ section {
             width: 100%;
             height: 300px;
             object-fit: cover;
-            border-radius: 15px;
+            border-radius: 15px;            
         }
 
         .hover-items {
@@ -571,7 +615,7 @@ section {
             position: absolute;
             left: 0;
             top: 0;
-            background-color: var(--color-secondary);
+            background: linear-gradient(-45deg, slateblue,crimson);
             border-radius: 15px;
             opacity: 0%;
             transform: scale(0);
@@ -620,7 +664,7 @@ section {
 }
 
 .portfolio-item:hover .hover-items {
-    opacity: .7;
+    opacity: 1;
     transform: scale(1);
     box-shadow: 0 3px 15px blueviolet;
 }
