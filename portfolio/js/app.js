@@ -47,6 +47,9 @@ function pageTransitions() {
 
 pageTransitions();
 
+// type writter
+
+
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;

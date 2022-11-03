@@ -8,7 +8,7 @@
 :root {
     --color-primary: #191d2b;
     --color-secondary: #30CFD0;
-    --color-white: #FFFFFF;
+    --color-white: wheat;
     --color-black: #000;
     --color-gray0: #f8f8f8;
     --color-gray-1: #dbe1e8;
@@ -160,7 +160,7 @@ section {
                 opacity: 1;
                 text-transform: uppercase;
                 font-size: 1rem;
-                color: #30CFD0  ;
+                color: #30CFD0;
             }
 
             i {
@@ -276,7 +276,7 @@ section {
         p {
             margin: 1.5rem 0;
             line-height: 2rem;
-            background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+            background: linear-gradient(to right, #30CFD0 0%, #6c21c9 100%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -448,6 +448,7 @@ section {
             .progress-title {
                 text-transform: uppercase;
                 font-weight: 500;
+                color: crimson;
             }
 
             .progress-container {
@@ -477,6 +478,7 @@ section {
 
                     .html {
                         width: 80%;
+                        transition: all .4s ease;
                     }
 
                     .css3 {
@@ -576,6 +578,10 @@ section {
 
         p {
             color: var(--color-gray-2);
+            
+            span {
+                color: crimson;
+            }
 
         }
     }
@@ -727,6 +733,20 @@ section {
                 color: var(--color-gray-2);
                 line-height: 2rem;
                 padding-bottom: 1rem;
+
+                span {
+                    letter-spacing: .3rem;
+                    font-size: 1rem;
+                }
+            }
+
+            a {
+                color: crimson;
+
+                i {
+                    color: crimson;
+                    margin-left: 1rem;
+                }
             }
         }
     }

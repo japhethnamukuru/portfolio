@@ -8,7 +8,7 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #30CFD0;
-  --color-white: #FFFFFF;
+  --color-white: wheat;
   --color-black: #000;
   --color-gray0: #f8f8f8;
   --color-gray-1: #dbe1e8;
@@ -258,7 +258,7 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
-  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  background: linear-gradient(to right, #30CFD0 0%, #6c21c9 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -405,6 +405,7 @@ section {
 .about-stats .progress-bars .progress-bar .progress-title {
   text-transform: uppercase;
   font-weight: 500;
+  color: crimson;
 }
 .about-stats .progress-bars .progress-bar .progress-container {
   display: flex;
@@ -431,6 +432,7 @@ section {
 }
 .about-stats .progress-bars .progress-bar .progress-container .progress .html {
   width: 80%;
+  transition: all 0.4s ease;
 }
 .about-stats .progress-bars .progress-bar .progress-container .progress .css3 {
   width: 90%;
@@ -513,6 +515,9 @@ section {
 }
 .timeline .timeline-item p {
   color: var(--color-gray-2);
+}
+.timeline .timeline-item p span {
+  color: crimson;
 }
 
 .portfolio-text {
@@ -644,6 +649,17 @@ section {
   color: var(--color-gray-2);
   line-height: 2rem;
   padding-bottom: 1rem;
+}
+.blogs .blog .blog-text p span {
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+}
+.blogs .blog .blog-text a {
+  color: crimson;
+}
+.blogs .blog .blog-text a i {
+  color: crimson;
+  margin-left: 1rem;
 }
 
 .contact-content-container {
