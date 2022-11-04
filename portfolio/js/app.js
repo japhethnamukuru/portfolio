@@ -106,3 +106,21 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid crimson}";
         document.body.appendChild(css);
     };
+
+
+
+
+var $form = $('form#contact-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwD-V0gIyPLjlfNquMg7wyUFvF6ijSogLG5sUoG2epwDuucop-yJLYHllMGACSiQ7Y7BQ/exec'
+
+$('#submit').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
